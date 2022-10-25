@@ -5,7 +5,7 @@ public:
         int right = arr.size() - 1;
         long long prev = 0;
         long long prevprev = 0;
-        while(left<=right){
+        while(left<=arr.size() - 1){
             long long newValue = max(prev,arr[left]+prevprev);
             prevprev = prev;
             prev = newValue;
