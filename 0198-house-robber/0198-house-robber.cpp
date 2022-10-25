@@ -2,9 +2,8 @@ class Solution {
 public:
     int rob(vector<int>& arr) {
         int left = 0;
-        int right = arr.size() - 1;
-        long long prev = 0;
-        long long prevprev = 0;
+        int prev = 0;
+        int prevprev = 0;
         while(left<=arr.size() - 1){
             long long newValue = max(prev,arr[left]+prevprev);
             prevprev = prev;
